@@ -1,0 +1,18 @@
+name: Publish Preview Package to Artifactory
+
+on:
+  push:
+    # By default we assume the approach of using tags for full versions and other commits as preview
+    # However, there is also the option to go for an automated versioning in publish.yaml
+    # That would conflict with preview version publishing in this file, so further adjustment might be necessary.
+    # For further information see https://confluence.unity3d.com/display/SOLS/Authoring+Packages
+    branches:
+      - main
+jobs:
+  publish-preview:
+    uses: Solutions/shared-actions/.github/workflows/publish-preview-package.yaml@0.2.0
+    with:
+      preview_branch: main
+    secrets:
+      ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
+      ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}

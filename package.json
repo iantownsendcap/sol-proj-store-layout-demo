@@ -1,0 +1,19 @@
+{
+  "name": "com.unity.sol.<YourPackageName>",
+  "displayName": "<YourPackageName>",
+  "version": "0.0.1",
+  "unity": "2020.3",
+  "description": "<Your package description>",
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+  },
+  "type": "tool",
+  "documentationUrl": "https://github-vcs.unity3d.com/Solutions/com.unity.sol.packagetemplate/blob/main/Documentation~/index.md",
+  "author": {
+    "name": "Accelerate Solutions",
+    "email": "<AuthorEmail>@unity3d.com",
+    "url": "https://github-vcs.unity3d.com/Solutions/com.unity.sol.<YourPackageName>"
+  }
+}

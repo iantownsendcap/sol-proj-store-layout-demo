@@ -1,0 +1,21 @@
+name: Publish to Artifactory
+
+on:
+  push:
+    # By default we assume the approach of using tags for full versions and other commits as preview
+    # However, there is also the option to go for an automated versioning based on conventional
+    # commits. If you are using the automated versioning comment out / remove the tags entry and rather 
+    # uncomment the "branches" one => This basically means every push to main is a new release
+    # But automated versioning can conflict with preview versions, so further adjustment might be necessary.
+    # For further information see https://confluence.unity3d.com/display/SOLS/Authoring+Packages
+    #branches:
+    #  - main  
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  publish:
+    uses: Solutions/shared-actions/.github/workflows/publish-package.yaml@0.2.0
+    secrets:
+      ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
+      ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
