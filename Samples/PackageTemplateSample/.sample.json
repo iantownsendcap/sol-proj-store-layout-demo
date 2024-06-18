@@ -1,5 +1,0 @@
-{
-	"displayName": "Sample Name",
-        "description": "Description for your sample.  This will be visible in the Package Manager",
-	"createSeparatePackage": false
-}
