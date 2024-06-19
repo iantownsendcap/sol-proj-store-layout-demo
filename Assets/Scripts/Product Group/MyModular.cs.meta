@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b286f08c5ad0b8849ae404ab6241ed74
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shelfGroupPrefab: {fileID: 4449995671769159970, guid: 76931680009b4f441ad6d53d1ba63926, type: 3}
+  - BackLeft: {instanceID: 0}
+  - FrontLeft: {instanceID: 0}
+  executionOrder: 100
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

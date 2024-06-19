@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2aa1211dabf008941a7f34a4d659a89d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - endNodeWidthHeight: {instanceID: 0}
+  - endNodeDepth: {instanceID: 0}
+  - boundry: {instanceID: 0}
+  - icons: {instanceID: 0}
+  - ColorMat: {fileID: 2100000, guid: 09beed6646718f145b3a142faef0f6f3, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
